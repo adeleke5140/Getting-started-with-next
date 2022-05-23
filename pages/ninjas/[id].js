@@ -5,9 +5,11 @@ const Details = ({ ninja }) => {
   const { id } = router.query
   return (
     <div>
-      <h1>Details Page</h1>
+      <h1>Ninja Details</h1>
       <h2>{ninja.name}</h2>
-      <p>{ninja.username}</p>
+      <p>{ninja.email}</p>
+      <p>{ninja.website}</p>
+      <p>{ninja.address.city}</p>
     </div>
   )
 }
